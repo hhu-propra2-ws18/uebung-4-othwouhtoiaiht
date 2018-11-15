@@ -1,11 +1,13 @@
 package de.hhu.propra.db.entities;
 
-import lombok.Data;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import lombok.Data;
 
 @Data // Lombok - Generiert Getter, Setter, toString, ...
 @Entity
@@ -18,5 +20,5 @@ public class Kunde {
     private String stadt;
     private Integer plz;
 
-    // TODO: Hier muss irgendetwas mit Autos hin...
+    List<Auto> autos;
 }

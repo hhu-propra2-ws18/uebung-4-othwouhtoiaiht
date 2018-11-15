@@ -15,6 +15,6 @@ public class Auto{
 	private Long id;
 	private String marke;
 	private String farbe;
-	private Double hubraum;
+	private int hubraum;
 
 }
