@@ -28,7 +28,7 @@
         <td th:text="${kunde.plz}"></td>
         <td>
             <ul>
-                <li>Volkswagen -- schwarz (2000 ccm)</li>
+                <li th:each="auto : ${kunde.autos}" th:text="|${auto.marke} -- ${auto.farbe} (${auto.hubraum})|"></li>
             </ul>
         </td>
     </tr>
